@@ -3,17 +3,19 @@
 # http://inventwithpython.com/pygame
 # Released under a "Simplified BSD" license
 
+# Modified for S & G's by Daniel Grimes & Justin Grimes (@zelon88) on 12-7-2019.
+
 #KRT 14/06/2012 modified Start Screen and Game Over screen to cope with mouse events
 #KRT 14/06/2012 Added a non-busy wait to Game Over screen to reduce processor loading from near 100%
 import random, pygame, sys
 from pygame.locals import *
 
-FPS = 15
-WINDOWWIDTH = 640
-WINDOWHEIGHT = 480
+FPS = 13
+WINDOWWIDTH = 1600
+WINDOWHEIGHT = 900
 CELLSIZE = 20
-assert WINDOWWIDTH % CELLSIZE == 0, "Window width must be a multiple of cell size."
-assert WINDOWHEIGHT % CELLSIZE == 0, "Window height must be a multiple of cell size."
+#assert WINDOWWIDTH % CELLSIZE == 0, "Window width must be a multiple of cell size."
+#assert WINDOWHEIGHT % CELLSIZE == 0, "Window height must be a multiple of cell size."
 CELLWIDTH = int(WINDOWWIDTH / CELLSIZE)
 CELLHEIGHT = int(WINDOWHEIGHT / CELLSIZE)
 
